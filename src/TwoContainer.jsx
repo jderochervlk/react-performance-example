@@ -9,8 +9,7 @@ const TwoContainer = () => {
     setInterval(() => {
         setVal(prev => {
             const newVal = Map({ one: 'foo', two: 'bar' })
-            const isSame = prev.equals(newVal)
-            return !isSame ? newVal : prev
+            return prev.mergeDeep(newVal)
         })
     }, 2000)
 
