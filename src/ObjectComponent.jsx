@@ -1,8 +1,9 @@
 import * as _ from 'lodash/fp'
 import { useEffect, useState } from 'react'
 
-const TwoSpread = ({ foo, bar }) => {
-    console.log('rendering TwoSpread')
+const ObjectComponent = ({ data }) => {
+    const foo = _.prop('one', data)
+    const bar = _.prop('two', data)
 
     return (
         <div>
@@ -11,4 +12,4 @@ const TwoSpread = ({ foo, bar }) => {
     )
 }
 
-export default TwoSpread
+export default ObjectComponent

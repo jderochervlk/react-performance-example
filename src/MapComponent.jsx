@@ -1,11 +1,15 @@
 import * as _ from 'lodash/fp'
 import { useEffect, useState } from 'react'
 
-const TwoChild = ({ data }) => {
+/**
+ * @param {*} Map({ one: string, two: string })
+ * @returns JSX
+ */
+const MapComponent = ({ data }) => {
     const foo = data.get('one')
     const bar = data.get('two')
 
-    console.log('rendering TwoChild')
+    console.log('rendering MapComponent')
 
     return (
         <div>
@@ -14,4 +18,4 @@ const TwoChild = ({ data }) => {
     )
 }
 
-export default TwoChild
+export default MapComponent

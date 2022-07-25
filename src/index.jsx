@@ -1,13 +1,15 @@
 import * as ReactDOM from 'react-dom/client'
 import { Map } from 'immutable'
 import { useMemo, useEffect, useState } from 'react'
-import OneContainer from './OneContainer'
-import TwoContainer from './TwoContainer'
+import ObjectContainer from './ObjectContainer'
+import EqualsContainer from './EqualsContainer'
+import MapContainer from './MapContainer'
 
 const App = () => (
     <div>
-        <OneContainer />
-        <TwoContainer />
+        <ObjectContainer />
+        <EqualsContainer />
+        <MapContainer />
     </div>
 )
 
